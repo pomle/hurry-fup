@@ -18,7 +18,7 @@ Physics.prototype.__obstruct = function alternativePhysicsObstruct(object, attac
 const ALIVE = 1;
 const DEAD = 0;
 
-const Y_MOVEMENT_FUDGE = 300;
+const Y_MOVEMENT_FUDGE = 200;
 const SCATTER = 100;
 const SPACING = 500;
 const OUTOFBOUNDS = -1000;
@@ -192,7 +192,8 @@ export function createGame() {
   window.addEventListener('keydown', handleKeyboard);
   window.addEventListener('keyup', handleKeyboard);
 
-  ///game.setPlaybackSpeed(0.2);
-
-  return game;
+  return {
+    game,
+    players,
+  };
 }

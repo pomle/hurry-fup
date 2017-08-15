@@ -1,0 +1,18 @@
+.App {
+    text-align: center;
+}
+
+.App .HighScore {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.App .snakesilk-presenter .Overlay h1 {
+    order: -1;
+}
+
+.instructions {
+    list-style: none;
+}
