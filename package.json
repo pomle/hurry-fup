@@ -4,7 +4,7 @@
   "private": false,
   "dependencies": {
     "@snakesilk/engine": "^0.13.0",
-    "@snakesilk/platform-traits": "https://github.com/snakesilk/platform-traits.git#friction",
+    "@snakesilk/platform-traits": "^0.5.0",
     "@snakesilk/react-presenter": "^0.1.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

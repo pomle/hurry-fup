@@ -2,6 +2,19 @@ import THREE from 'three';
 import { Game, Entity, Scene, Tween } from '@snakesilk/engine';
 import { Jump, Physics, Solid } from '@snakesilk/platform-traits';
 
+Physics.prototype.__obstruct = function alternativePhysicsObstruct(object, attack) {
+  switch (attack) {
+  case object.SURFACE_TOP:
+  case object.SURFACE_BOTTOM:
+    this.velocity.y = object.velocity.y;
+    break;
+  case object.SURFACE_LEFT:
+  case object.SURFACE_RIGHT:
+    this.velocity.x = object.velocity.x;
+    break;
+  }
+}
+
 const ALIVE = 1;
 const DEAD = 0;
 
